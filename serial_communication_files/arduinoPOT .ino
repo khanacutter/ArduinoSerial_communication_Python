@@ -1,18 +1,18 @@
 
 #define pot A0
 
-int deger= 0;
+int value= 0;
 
 void setup() {
  Serial.begin(9600);
- Serial.println('Pot degerleri');
+ Serial.println('Pot values');
  
 }
 
 void loop() {
- deger= analogRead(pot);
- float voltaj=(5.00/1024.00)*deger;
- Serial.println(voltaj);
+ value= analogRead(pot);
+ float voltage=(5.00/1024.00)*value;
+ Serial.println(voltage);
  delay(500);
 
 }
